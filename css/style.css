@@ -19,6 +19,7 @@ body {
   background-color: #292c33;
   color: #ffffff;
   position: relative;
+  min-height: 635px;
 }
 
 .first-section::before {
@@ -131,7 +132,10 @@ body {
   line-height: 21px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 776px) {
+  .first-section {
+    min-height: 325px;
+  }
   .first-section .content .left .title {
     font-size: 36px;
     line-height: 42px;
@@ -159,7 +163,14 @@ body {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 376px) {
+  .first-section {
+    min-height: 535px;
+  }
+  .first-section .content .left .title {
+    font-size: 36px;
+    line-height: 42px;
+  }
   .first-section > .title {
     visibility: hidden;
   }
@@ -196,6 +207,7 @@ body {
 .second-section {
   background-color: #292c33;
   color: #ffffff;
+  min-height: 600px;
 }
 
 .second-section .bottom {
@@ -219,6 +231,7 @@ body {
 .second-section .right > .row {
   background: #31353f;
   border-radius: 0px 10px 10px 10px;
+  min-height: 485px;
 }
 
 .second-section .right .title {
@@ -252,7 +265,22 @@ body {
   color: rgba(255, 255, 255, 0.75);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 776px) {
+  .second-section {
+    min-height: 525px;
+  }
+  /* .second-section .top {
+    display: none;
+  }
+  .second-section .bottom {
+    display: block;
+  } */
+}
+
+@media only screen and (max-width: 376px) {
+  .second-section {
+    min-height: 1070px;
+  }
   .second-section .top {
     display: none;
   }
@@ -267,6 +295,7 @@ body {
 .third-section {
   background-color: #31353f;
   color: #ffffff;
+  min-height: 600px;
 }
 
 .third-section .title > div {
@@ -323,12 +352,30 @@ body {
   line-height: 175%;
   color: rgba(255, 255, 255, 0.75);
 }
+
+@media only screen and (max-width: 776px) {
+  .third-section {
+    min-height: 700px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .third-section {
+    min-height: 930px;
+  }
+
+  .third-section .content .left > div::before {
+    left: -15px;
+  }
+}
+
 /* ------------ end third section ------------- */
 
 /* ------------ start fourth section ------------- */
 .fourth-section {
   background-color: #31353f;
   color: #ffffff;
+  min-height: 600px;
   position: relative;
 }
 
@@ -391,12 +438,22 @@ body {
   color: rgba(255, 255, 255, 0.75);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 776px) {
+  .fourth-section {
+    min-height: 700px;
+  }
+
   .fourth-section .content .top {
     display: block;
   }
   .fourth-section .content .bottom {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .fourth-section {
+    min-height: 930px;
   }
 }
 
@@ -406,6 +463,7 @@ body {
 .fifth-section {
   background-color: #292c33;
   color: #ffffff;
+  min-height: 166px;
 }
 
 .fifth-section .icon i {
@@ -423,12 +481,25 @@ body {
   font-size: 18px;
   color: rgba(255, 255, 255, 0.75);
 }
+
+@media only screen and (max-width: 776px) {
+  .fifth-section {
+    min-height: 320px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .fifth-section {
+    min-height: 465px;
+  }
+}
 /* ------------ end fifth section ------------- */
 
 /* ------------ start sixth section ------------- */
 .sixth-section {
   background-color: #31353f;
   color: #ffffff;
+  min-height: 860px;
 }
 
 .sixth-section .title > div {
@@ -451,16 +522,19 @@ body {
 .sixth-section .content .box {
   background: #292c33;
   border-radius: 10px;
+  min-height: 180px;
+  padding-left: 0px;
 }
 
 .sixth-section .content .box .icon {
   background: rgba(77, 137, 206, 0.25);
   border-radius: 10px;
+  width: 84px;
   height: 88px;
 }
 
 .sixth-section .content .box .icon i {
-  font-size: 200%;
+  font-size: 40px;
 }
 
 .sixth-section .content .box .desc .header {
@@ -497,21 +571,35 @@ body {
   width: 100px;
   height: 30px;
 }
+@media only screen and (max-width: 776px) {
+  .sixth-section {
+    min-height: 1190px;
+  }
+}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 376px) {
+  .sixth-section {
+    min-height: 620px;
+  }
   .sixth-section .content .box .actions button {
     display: none;
   }
   .sixth-section .content .box .icon {
     height: 60px;
   }
+  .sixth-section .content .third,
+  .fourth {
+    display: none;
+  }
 }
+
 /* ------------ end sixth section ------------- */
 
 /* ------------ start last section ------------- */
 .last-section {
   background-color: #292c33;
   color: #ffffff;
+  min-height: 220px;
   position: relative;
 }
 
@@ -555,5 +643,17 @@ div {
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
+}
+
+@media only screen and (max-width: 776px) {
+  .last-section {
+    min-height: 325px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .last-section {
+    min-height: 410px;
+  }
 }
 /* ------------ end last section ------------- */
